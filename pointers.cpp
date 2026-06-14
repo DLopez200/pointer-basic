@@ -1,7 +1,23 @@
 #include <iostream>
 using namespace std;
 
+void increment(int& x){
+    (&x)++;
+}
+
 int main(){
+/* pointer are good for:
+1. changing variables from different location - reference 
+2.navigate array : iteration
+3.Dynamic memory managements : smart array
+Best to know how to use them to know how to avoid them */
+
+    int y =10;
+
+    increment(&y);
+    cout << y << endl;
+
+
     int x = 9;
     cout << &x << endl; //& - address of operator 
 
