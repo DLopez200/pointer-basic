@@ -17,6 +17,16 @@ int main(){
     *ptr = 213;
 
     cout << x << endl;
+
+    ptr +=1;
+    cout << ptr <<endl;
+    cout << *ptr <<endl; // The pointer had gone up 4 bytes due to the change in memory
     
+
+    char c = 'c';
+    char* cptr  = &c;
+    cout << cptr <<endl;
+    cout << cptr + 1 << endl; //char goes up 1 byte due to onlt taking up 1 byte
+
     return 0;
 }
